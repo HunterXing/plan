@@ -1,0 +1,19 @@
+server:
+  port: 8094
+  servlet:
+    context-path: /plan
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_plan?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password:
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+
+user2: "zhangsan"
